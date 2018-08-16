@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS `user`;
+
+CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'unique user_id',
+  `username` varchar(55) DEFAULT NULL COMMENT 'name of the user who will access to the reports',
+  `password` varchar(55) DEFAULT NULL COMMENT 'password of the user ',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

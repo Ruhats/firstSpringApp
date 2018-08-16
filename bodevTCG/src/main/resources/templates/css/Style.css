@@ -1,0 +1,56 @@
+.pwd-forgot {
+    margin: 0 auto;
+    display: block;
+    float: right;
+}
+form {
+    margin: 0 auto;
+    display: block;
+    float: initial;
+    width: 50%;
+}
+
+input {
+    margin: 0 auto;
+    display: block;
+    float: initial;
+    width: 50%;
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+    background: #1e5799; /* Old browsers */
+    background: -webkit-linear-gradient(top, rgb(163,223,233) 0%,rgb(44,199,230) 50%,rgb(163,223,233) 100%); /* Chrome10-25,Safari5.1-6 */
+}
+
+.float-middle{
+    float: initial;
+}
+
+.top-margin {
+    margin-top:10%;
+}
+
+.max-width {
+    max-width: 500px;
+}
+
+.padding-top {
+    padding-top: 50px;
+}
+
+a.link {
+    text-decoration: none;
+}
+
+a.visited {
+    text-decoration: none;
+}
+
+a.hover {
+    text-decoration: underline;
+}
+
+a.active {
+    text-decoration: underline;
+}

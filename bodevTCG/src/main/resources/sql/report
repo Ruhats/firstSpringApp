@@ -1,0 +1,16 @@
+DROP  TABLE IF EXISTS `report`;
+
+CREATE TABLE `report` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'report id',
+  `service_id` int(11) NOT NULL COMMENT 'service/package spesific reporting id',
+  `package_id` int(11) NOT NULL COMMENT 'service/package spesific reporting id',
+  `total_subscriber` int(11) NOT NULL COMMENT 'total subscriber amount curently on the system',
+  `daily_new_subscriber` int(11) NOT NULL DEFAULT '0' COMMENT 'daily subscriber gained',
+  `total_promo_subscriber` int(11) NOT NULL COMMENT 'total active users that runs on promotion time',
+  `daily_cancellation_subscriber` int(11) NOT NULL DEFAULT '0' COMMENT 'daily subscriber cancelled',
+  `daily_suspended_subscriber` int(11) NOT NULL DEFAULT '0' COMMENT 'daily subscriber got suspended',
+  `daily_active_subscriber_change` int(11) NOT NULL DEFAULT '0' COMMENT 'daily_active_subscriber_change = total_subscriber - ("total_subscriber" of the previous day) - (daily_cancellation_subscriber + daily_suspended_subscriber)',
+  `daily_charge_total` float(10,2) NOT NULL DEFAULT '0.00' COMMENT 'total income of the report day',
+  `report_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'date of the report created',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
